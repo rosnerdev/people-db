@@ -12,3 +12,6 @@ It is nowhere near finished, so submitting issues through the repo will be much 
 - [ ] Pagination
 - [ ] Improved UI design
 - [ ] More fields in the form - photo url, date of birth, bio, etc...
+
+Not sure of:
+- [ ] Replace SQLite3 with an ORM
