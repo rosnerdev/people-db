@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <div class="flex space-x-2 items-end my-4 mx-2">
+        <h1 class="text-2xl font-semibold">People list</h1>
+        <a href={{ url_for("form") }} class="text-blue-700 underline decoration-dashed hover:decoration-solid">Submit</a>
+    </div>
+    {% if list|length == 0 %}
+        <p class="text-gray-500 mx-2">There are no people listed currently</p>
+    {% else %}
+        {% for person in list %}
+            <div class="flex space-y-2 mx-2 items-start flex-col border-2 border-gray-300">
+                <p>Name: {{ person.name }}</p>
+                <p class="text-gray-500">Age: {{ person.age }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

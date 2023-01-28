@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Form{% endblock %}
+
+{% block body %}
+    <form action={{ url_for("submit") }}>
+        <label for="name">Name</label>
+        <input type="text" name="name">
+
+        <label for="age">Age</label>
+        <input type="number" name="age">
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

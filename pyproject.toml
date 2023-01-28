@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "people-db"
+version = "0.1.0"
+description = "A flask app that allows to search for people from a community-generated database"
+authors = ["rosnerdev"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "people_db"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
